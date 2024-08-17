@@ -1,0 +1,125 @@
+.contact {
+    border: 2px solid black;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .contact_info {
+    margin-right: 10px;
+  }
+  
+  .text {
+    margin-left: 8px;
+  }
+  
+  .button_container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+  }
+  
+  .btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 8px;
+    padding: 8px 16px;
+  }
+  
+  .btn:hover {
+    background-color: #0056b3;
+  }
+  
+  .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    max-height: 80vh;
+    overflow-y: auto;
+  }
+  
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modalContent {
+    margin-bottom: 20px;
+  }
+  
+  .modalBtn {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-right: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .modalBtn:last-child {
+    background-color: #f44336;
+  }
+  
+  .modalBtn:hover {
+    opacity: 0.8;
+  }
+  
+  .modalContent h2 {
+    margin-bottom: 20px;
+  }
+  
+  .modalContent form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .modalContent form label {
+    margin-bottom: 10px;
+  }
+  
+  .modalContent form input {
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .modalContent form div {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+  }
+  
+  .modalContent form button {
+    margin-right: 10px;
+  }
+  
+  .modalContent form button:last-child {
+    margin-right: 0;
+  }
