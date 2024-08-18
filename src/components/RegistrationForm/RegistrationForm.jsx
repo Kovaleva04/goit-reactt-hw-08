@@ -5,7 +5,7 @@ import toast from "react-hot-toast";
 import css from "./RegistrationForm.module.css";
 import * as Yup from "yup";
 
-const RegisterForm = () => {
+const RegistrationForm = () => {
   const dispatch = useDispatch();
 
   const formik = useFormik({
