@@ -1,6 +1,6 @@
-import { createSelector, createSlice } from "@reduxjs/toolkit";
-import { fetchContacts, addContact, deleteContact } from "./operations/";
-import { changeContact } from "./operations";
+import { createSlice } from "@reduxjs/toolkit";
+import { fetchContacts, addContact, deleteContact, changeContact } from "./operations";
+import { logOut } from '../auth/operations'; // Імпортуємо logOut з модуля аутентифікації
 
 const contactsSlice = createSlice({
   name: "contacts",
@@ -62,6 +62,10 @@ const contactsSlice = createSlice({
       .addCase(changeContact.rejected, (state, action) => {
         state.isLoading = false;
         state.error = action.payload;
+      })
+      // Додаємо обробку logOut.fulfilled
+      .addCase(logOut.fulfilled, (state) => {
+        state.items = []; // Очищення списку контактів після виходу користувача
       });
   },
 });
