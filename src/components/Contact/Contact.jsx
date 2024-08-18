@@ -37,9 +37,6 @@ const Contact = ({ id, name, number }) => {
       .catch((error) => {
         toast.error(`Failed to delete contact: ${error.message}`);
       });
-      addCase(logOut.fulfilled, (state) => {
-        state.contacts = []; // Очищення контактів після виходу
-      });
   };
 
   const handleEdit = () => {
